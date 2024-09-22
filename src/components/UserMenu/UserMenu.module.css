@@ -1,0 +1,23 @@
+.menuWrapper {
+    display: flex;
+    align-items: center; /* Выравнивание по центру по вертикали */
+    gap: 30px;
+  }
+  
+  .greeting {
+    font-size: 18px; /* Увеличен шрифт для приветствия */
+    color: white; /* Установлен цвет текста */
+  }
+  
+  .logoutButton {
+    cursor: pointer;
+    color: #ff4d4d; /* Цвет текста кнопки */
+    background: none; /* Убрана фоновая заливка */
+    border: none; /* Убраны рамки */
+    text-decoration: underline; /* Подчёркнутый текст */
+    transition: color 0.3s; /* Плавный переход цвета */
+  }
+  
+  .logoutButton:hover {
+    color: #ff1a1a; /* Цвет при наведении */
+  }  

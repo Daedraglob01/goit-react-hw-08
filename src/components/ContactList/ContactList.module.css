@@ -1,0 +1,30 @@
+.listContainer {
+  padding: 20px;  
+  background-color: #f9f9f9;  
+  border-radius: 8px;  
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+}
+
+.listHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+  border-bottom: 1px solid #ccc;  
+  margin-bottom: 16px;
+}
+
+.title {
+  font-size: 24px;
+  margin: 0;  
+}
+
+.count {
+  font-size: 14px;
+  color: #555;  
+}
+
+.contactList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;  
+}

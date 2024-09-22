@@ -1,0 +1,17 @@
+.authContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;  
+  }
+  
+  .authLink {
+    text-decoration: none;  
+    color: #007bff;  
+    font-weight: 500;  
+    transition: color 0.3s ease;  
+  }
+  
+  .authLink:hover {
+    color: #0056b3;  
+  }  
