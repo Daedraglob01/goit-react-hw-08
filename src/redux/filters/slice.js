@@ -1,10 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  name: null,
-  number: null,
-  isLoading: false,
-  isError: false,
+  name: ""
 };
 
 const filtersSlice = createSlice({
@@ -12,12 +9,7 @@ const filtersSlice = createSlice({
   initialState,
   reducers: {
     changeFilter: (state, { payload }) => {
-      if (payload.name !== undefined) {
-        state.name = payload.name;
-      }
-      if (payload.number !== undefined) {
-        state.number = payload.number;
-      }
+      state.name = payload
     },
   },
 });
