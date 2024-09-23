@@ -6,11 +6,11 @@ export const selectContacts = (state) => state.contacts.items;
 export const selectFilteredContacts = createSelector(
   [selectContacts, selectNameFilter, selectNumberFilter],
   (items, filter, number) => {
-    const normalizedFilter = filter ? filter.toLowerCase() : ''; // Перевірка на null/undefined
-    const normalizedNumber = number || ''; // Перевірка на null/undefined
+    const normalizedFilter = filter ? filter.toLowerCase() : ''; 
+    const normalizedNumber = number || ''; 
 
     const filteredItems = items.filter(item => {
-      const itemName = item.name ? item.name.toLowerCase() : ''; // Перевірка на null/undefined
+      const itemName = item.name ? item.name.toLowerCase() : ''; 
       return (
         itemName.includes(normalizedFilter) ||
         item.number.includes(normalizedNumber)
